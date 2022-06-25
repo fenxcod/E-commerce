@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esponjosos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/navbar.css' %}">
+
+</head>
+<body>
+    <section>
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <a href="{% url 'index' %}" class="logo">Esponjosos<span>.</span></a>
+            <nav class="navbar">
+                <a href="{% url 'index' %}">Inicio</a>
+                <a href="{% url 'items' %}">Más productos</a>
+                <a href="#review">Mes</a> 
+                <a href="#contact">Contacto</a>
+            </nav>
+            <div class="icons">
+                <a href="" class="fas fa-heart"></a>
+                <a href=" {% url 'cart_page' %} " class="cart fas fa-shopping-cart"><span>0</span></a>
+                <a href="" class="fas fa-user"></a>
+            </div>
+        </header>        
+    </section>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Esponjosos</h3>
+            <span>abrazando</span><span> cada momento</span>
+            <p></p>
+            <a href="#products" class="btn">Comprar ahora</a>
+        </div>
+    </section>  
+    <section class="about" id="about">
+        <!-- <h1 class="heading"> <span>  </span>  </h1> -->
+        <div class="row">
+                <!-- <div class="video-container">
+                    <img src="{% static 'video/gif3.gif' %}" alt="My image">
+                    <h3>Los mejor productos</h3>
+                </div> -->
+            <div class="content">
+                <!-- <h3>¿Por qué elegirnos?</h3> -->
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis
+                    perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat
+                    illum, unde optio temporibus.</p> -->
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni
+                    quia molestias perspiciatis, unde repudiandae quidem.</p> -->
+                <!-- <a href="#" class="btn">learn more</a> -->
+            </div>
+        </div>
+    </section>
+    <!-- <section class="icons-container">
+        <div class="icons">
+            <img src="{% static 'img/icon-1.png' %}" alt="My image">
+            <div class="info">
+                <h3>Entrega gratis</h3>
+                <span>despues de 500$</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="{% static 'img/icon-2.png' %}" alt="My image">
+            <div class="info">
+                <h3>10 días habiles de devolucion </h3>
+                <span>garantía de reembolso</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="{% static 'img/icon-3.png' %}" alt="My image">
+            <div class="info">
+                <h3>Checa las ofertas y regalos</h3>
+                <span>En cierto tipo de productos</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="{% static 'img/icon-4.png' %}" alt="My image">
+            <div class="info">
+                <h3>pagos online</h3>
+                <span>Seguridad en los pagos con PayPal </span>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="products" id="products">
+        <h1 class="heading"> Los mejores <span>Productos</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <div>
+                        <span class="iva">iva incluido</span>
+                        <a href=" {% url 'description' %} " class="click_me"><img src="{% static 'img/aguadama1.2.png' %}" alt="My image"></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#"  class="cart-btn">Agregar</a>
+                        <a href="https://buy.stripe.com/test_14kbKtgYa7Er3WE9AC" target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Aguacatito</h3>
+                    <div class="price"> $140.00 <span>$150.00</span> </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <a href=" {% url 'cerdito' %} " class="click_me"><img src="{% static 'img/cerdocora.png' %}" alt="My image"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">agregar</a>
+                        <a href="https://buy.stripe.com/test_5kA8yh8rE3obgJq3cd" target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>cerdito</h3>
+                    <div class="price"> $140.00 <span>$150.00</span> </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <a href="{% url 'changuito' %}"><img src="{% static 'img/chang1.1.png' %}" alt="My image"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">agregar</a>
+                        <a href="https://buy.stripe.com/test_6oE9ClazMf6T1OwcMP" target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Changuito</h3>
+                    <div class="price"> $190.00 <span>$200.00</span> </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <a href=" {% url 'chihuahua' %} "><img src="{% static 'img/chiama2.png' %}" alt="My image"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">agregar</a>
+                        <a href=" https://buy.stripe.com/bIY007dfTaw72ycaEH " target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>chihuahua</h3>
+                    <div class="price"> $75.00 <span>$80.00</span> </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-17%</span>
+                <div class="image">
+                    <a href=" {% url 'conejita' %} "><img src="{% static 'img/cone.png' %}" alt="My image"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">agregar</a>
+                        <a href="https://buy.stripe.com/6oE5krcbP7jV0q4cMO" target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Conejita</h3>
+                    <div class="price"> $230.00 <span>$250.00</span> </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <a href=" {% url 'triceratops' %} "><img src="{% static 'img/dino1.1.png' %}" alt="My image"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">agregar</a>
+                        <a href="https://buy.stripe.com/test_cN2bKtdLY8Ival2fZ3" target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>triceratops</h3>
+                    <div class="price"> $100 <span>$105</span> </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <a href=" {% url 'rex' %} "><img src="{% static 'img/dino2.1.png' %}" alt="My image"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">agregar</a>
+                        <a href="https://buy.stripe.com/test_4gw7udfU62k7eBi6ov" target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Tirannosaurus rex </h3>
+                    <div class="price"> $110 <span>$120.00</span> </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <a href=" {% url 'deno' %} "><img src="{% static 'img/dinoazul1.1.png' %}" alt="My image"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">agregar</a>
+                        <a href="https://buy.stripe.com/test_6oE7ud37k1g33WE6os" target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Dino azul</h3>
+                    <div class="price"> $120.00 <span>$130.00</span> </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <a href=" {% url 'pardo' %} "><img src="{% static 'img/pardo1.png' %}" alt="My image"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">agregar</a>
+                        <a href="https://buy.stripe.com/test_bIYeWFgYa4sf8cUdQW" target="_blank">comprar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>pardo escandalosos</h3>
+                    <div class="price"> $140.00 <span>$150.00</span> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span> Contactanos </span>  </h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Emviar" class="btn">
+            </form>
+
+            <div class="image">
+                <img src="{% static 'gmail/gmail.jpg' %}" alt="My image">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Cliente</h3>
+                <a href=" {% static 'pdf/Aviso de privacidad.pdf' %}" target="_blank">Aviso de privacidad</a>
+                <a href="{% static 'pdf/Términos y condiciones.pdf' %}" target="_blank">Terminos y Condiciones</a>
+                <!-- <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a> -->
+            </div>
+
+            <div class="box">
+                <h3>Cuenta</h3>
+                <a href="#">Mi cuenta</a>
+                <a href="#">Mi orden</a>
+                <a href="#">Favoritos</a>
+            </div>
+
+            <div class="box">
+                <h3>Contactanos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">twitter</a>
+            </div>
+
+        </div>
+
+        <div class="credit"><span> © 2022-2022, Esponjosos.com, SC</span> Esponjosos </div>
+
+    </section>
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>

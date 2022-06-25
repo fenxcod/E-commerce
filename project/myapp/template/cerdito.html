@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cerdito</title>
+    <link rel="stylesheet" href=" {% static 'styles/description.css' %} ">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="imgBx">
+            <img src="{% static 'img/cerdocora.png' %}" alt="aguacatito">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>Cerdito <br>
+                    <span>peluche</span>
+                </h2>
+                <p>
+                    MINISO Peluche De Cerdito Sentado con corazon: Confeccionado En Felpa Suave con Detalles Bordados, Ideal para Los Niños, para La Decoración De Cuartos O como Cojín <br>
+
+                    <ul>
+                        <li>
+                            Siente la suavidad de este peluche que esta confeccionado en suave felpa, tan suave que no querrás dejar de abrazarlo. Es cómodo y seguro, úsalo también como un cojín. Y llévalo a todas partes.
+                        </li>
+                    </ul>
+                </p>
+                <h3> $140.00</h3>
+                <button class="agregar">agregar</button>
+                <a href=" {% url 'items' %} " class="seguir">seguir buscando</a>
+                <a></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

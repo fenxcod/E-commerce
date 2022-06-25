@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changuito</title>
+    <link rel="stylesheet" href=" {% static 'styles/description.css' %} ">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="imgBx">
+            <img src="{% static 'img/dino1.1.png' %}" alt="aguacatito">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>Triceratops <br>
+                    <span>peluche</span>
+                </h2>
+                <p>
+                    Juguete de peluche azul Triceratops abrazo y acurrucarse con tela suave y relleno  Lindo regalo de dinosaurio para todo tipo de evento                     
+                         <li>
+                            Triceratops de felpa superescotada: la cara adorable y el cuerpo exprimible de nuestro triceratop de dinosaurio están hechos de tela y relleno de alta calidad                       
+                         </li>
+                    </ul>
+                </p>
+                <h3> $100.00</h3>
+                <button class="agregar">agregar</button>
+                <a href=" {% url 'items' %} " class="seguir">seguir buscando</a>
+                <a></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

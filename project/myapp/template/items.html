@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+  <link rel="stylesheet" href="{% static 'styles/navbar.css' %}">
+
+  <title>Más productos</title>
+</head>
+<body>
+    <section>
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <a href="{% url 'index' %}" class="logo">Esponjosos<span>.</span></a>
+            <nav class="navbar">
+                <a href="{% url 'index' %}">Inicio</a>
+                <a href="{% url 'items' %}">Más productos</a>
+                <!-- <a href="#products">Tendencia</a> -->
+                <a href="#review">Mes</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+            <div class="icons">
+                <a href="" class="fas fa-heart"></a>
+                <a href="" class="cart fas fa-shopping-cart"><span>0</span></a>
+                <a href="" class="fas fa-user"></a>
+            </div>
+        </header>        
+    </section>
+
+  <section class="products" id="products">
+    <h1 class="heading"> más <span>Productos</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="{% static 'img/chiro1.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">agregar al carrito</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Chihuahua</h3>
+                <div class="price"> $90.00 <span>$100.00</span> </div>
+            </div>
+        </div>
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="{% static 'img/dinonaranja1.1.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">agregar al carrito</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>dinosaurio naranja</h3>
+                <div class="price"> $127.00 <span>$150.00</span> </div>
+            </div>
+        </div>
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="{% static 'img/dinoniññoverde1.2.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">agregar al carrio</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Dinosaurio verde</h3>
+                <div class="price"> $127.00 <span>$150.00</span> </div>
+            </div>
+        </div>
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="{% static 'img/dinoverde1.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">agregar al carrito</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Dinosaurio bebe</h3>
+                <div class="price"> $144.00 <span>$180.00</span> </div>
+            </div>
+        </div>
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="{% static 'img/gatogrande.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">agregar al carrito</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Perrito bebe</h3>
+                <div class="price"> $140.00 <span>$150.00</span> </div>
+            </div>
+        </div>
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="{% static 'img/kate1.1.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Agregar al carrito</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Aguacate bebe</h3>
+                <div class="price"> $90.00 <span>$100.00</span> </div>
+            </div>
+        </div>
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="{% static 'img/dino2.1.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">agregar al carrito</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Dinosaurio rex morado</h3>
+                <div class="price"> $160.00 <span>$180.00</span> </div>
+            </div>
+        </div>
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="{% static 'img/leon1.1.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">agregar al carrito</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Perrito amarillo</h3>
+                <div class="price"> $130.00 <span>$150.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="{% static 'img/sabino.png' %}" alt="My image">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">agregar al carrito</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Perrito cafecito</h3>
+                <div class="price"> $150.00 <span>$160.00</span> </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+</html>

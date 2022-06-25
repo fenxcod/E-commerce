@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changuito</title>
+    <link rel="stylesheet" href=" {% static 'styles/description.css' %} ">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="imgBx">
+            <img src="{% static 'img/chang1.1.png' %}" alt="aguacatito">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>Changuito <br>
+                    <span>peluche</span>
+                </h2>
+                <p>
+                    Changuito de Peluche Suave Chango Café Mono De Peluche Muñeco De Felpa Changos Monkey con ropita de bebe changuito
+                    <ul>
+                        <li>
+                            Amigo cuidadoso: este juguete de peluche es un amigo reconfortante y perfecto para obtener buenos deseos, cumpleaños y mucho más Es un amigo de viaje abrazable para niños en viajes por carretera y aviones, o una bonita decoración de dormitorio.                        </li>
+                    </ul>
+                </p>
+                <h3> $190.00</h3>
+                <button class="agregar">agregar</button>
+                <a href=" {% url 'items' %} " class="seguir">seguir buscando</a>
+                <a></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

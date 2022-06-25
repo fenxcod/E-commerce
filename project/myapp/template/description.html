@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Descripcion</title>
+    <link rel="stylesheet" href=" {% static 'styles/description.css' %} ">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="imgBx">
+            <img src="{% static 'img/aguadama1.2.png' %}" alt="aguacatito">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>Aguacatito <br>
+                    <span>peluche</span>
+                </h2>
+                <p>
+                    Peluche en forma de aguacate Kawaii, almohada suave para abrazar, 
+                    regalo para niños, niñas y amigos, juguete de Navidad o de San Valentín <br>
+
+                    <ul>
+                        <li>
+                            El mejor regalo: a los niños de todas las edades les encantará este 
+                            juguete de peluche de aguacate para jugar y como una almohada grande para leer, 
+                            ver la televisión, estudiar y dormir la siesta. 
+                            Bonita almohada de felpa es el mejor regalo para niños, parejas y amigos.
+                        </li>
+                    </ul>
+                </p>
+                <h3> $140.00</h3>
+                <button class="agregar">agregar</button>
+                <a href=" {% url 'items' %} " class="seguir">seguir buscando</a>
+                <a></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
