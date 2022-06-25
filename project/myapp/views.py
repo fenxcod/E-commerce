@@ -72,3 +72,13 @@ def compraExito(request):
     template = loader.get_template('compraExito.html')
     document = template.render()
     return HttpResponse(document)
+
+def form(request):
+    template = loader.get_template('form.html')
+    document = template.render()
+    return HttpResponse(document)
+
+def bolsa(request):
+    template = loader.get_template('bolsa.html')
+    document = template.render()
+    return HttpResponse(document)

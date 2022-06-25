@@ -21,28 +21,28 @@
                 <a href="{% url 'index' %}">Inicio</a>
                 <a href="{% url 'items' %}">Más productos</a>
                 <!-- <a href="#products">Tendencia</a> -->
-                <a href="#review">Mes</a>
-                <a href="#contact">Contacto</a>
+                <a href="{% url 'bolsa' %}">Bolsa de regalo</a>
+                <!-- <a href="#contact">Contacto</a> -->
             </nav>
             <div class="icons">
                 <a href="" class="fas fa-heart"></a>
                 <a href="" class="cart fas fa-shopping-cart"><span>0</span></a>
-                <a href="" class="fas fa-user"></a>
+                <a href="{% url 'form' %} " class="fas fa-user"></a>
             </div>
         </header>        
     </section>
 
   <section class="products" id="products">
     <h1 class="heading"> más <span>Productos</span> </h1>
-    <div class="box-container">
+    <div class="container box-container" id="lista-productos">
         <div class="box">
             <span class="discount">-10%</span>
             <div class="image">
                 <img src="{% static 'img/chiro1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar al carrito</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" id="items" class="cart-btn">agregar</a>
+                    <a href="https://buy.stripe.com/test_bIY4i16jw6AngJqcMW" target="_blank">Comprar</a>
                 </div>
             </div>
             <div class="content">
@@ -56,8 +56,8 @@
                 <img src="{% static 'img/dinonaranja1.1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar al carrito</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="https://buy.stripe.com/test_28o15PcHUbUHal214f" target="_blank">Comprar</a>
                 </div>
             </div>
             <div class="content">
@@ -68,11 +68,11 @@
         <div class="box">
             <span class="discount">-15%</span>
             <div class="image">
-                <img src="{% static 'img/dinoniññoverde1.2.png' %}" alt="My image">
+                <img src="{% static 'img/dinoniññoverde1.1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar al carrio</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="https://buy.stripe.com/test_dR63dX23g5wj9gYcMY" target="_blank">Comprar</a>
                 </div>
             </div>
             <div class="content">
@@ -86,8 +86,8 @@
                 <img src="{% static 'img/dinoverde1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar al carrito</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="https://buy.stripe.com/test_14k01L37k6An64MdR3" target="_blank">Comprar</a>
                 </div>
             </div>
             <div class="content">
@@ -101,8 +101,8 @@
                 <img src="{% static 'img/gatogrande.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar al carrito</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="https://buy.stripe.com/test_6oE8yh7nA3ob9gY28m" target="_blank" >Comprar</a>
                 </div>
             </div>
             <div class="content">
@@ -116,8 +116,8 @@
                 <img src="{% static 'img/kate1.1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Agregar al carrito</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="cart-btn">Agregar</a>
+                    <a href="https://buy.stripe.com/test_28o15PcHU5wj8cU5kz" target="_blank">Comprar</a>
                 </div>
             </div>
             <div class="content">
@@ -131,8 +131,8 @@
                 <img src="{% static 'img/dino2.1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar al carrito</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="https://buy.stripe.com/test_9AQ8yhcHU6Anal2dR6" target="_blank">Comprar</a>
                 </div>
             </div>
             <div class="content">
@@ -143,15 +143,15 @@
         <div class="box">
             <span class="discount">-20%</span>
             <div class="image">
-                <img src="{% static 'img/leon1.1.png' %}" alt="My image">
+                <img src="{% static 'img/leon1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar al carrito</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="https://buy.stripe.com/test_bIY3dXazM3obbp66oF" target="_blank">Comprar</a>
                 </div>
             </div>
             <div class="content">
-                <h3>Perrito amarillo</h3>
+                <h3>Leon </h3>
                 <div class="price"> $130.00 <span>$150.00</span> </div>
             </div>
         </div>
@@ -162,8 +162,8 @@
                 <img src="{% static 'img/sabino.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar al carrito</a>
-                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="https://buy.stripe.com/test_5kAeWF4bo9Mz3WEdR8" target="_blank">Comprar</a>
                 </div>
             </div>
             <div class="content">
@@ -175,7 +175,38 @@
     </div>
 
 </section>
-<script src="{% static 'js/main.js' %}"></script>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Cliente</h3>
+            <a href=" {% static 'pdf/Aviso de privacidad.pdf' %}" target="_blank">Aviso de privacidad</a>
+            <a href="{% static 'pdf/Términos y condiciones.pdf' %}" target="_blank">Terminos y Condiciones</a>
+        </div>
+
+        <div class="box">
+            <h3>Cuenta</h3>
+            <a href="#">Mi cuenta</a>
+            <a href="#">Mi orden</a>
+            <a href="#">Favoritos</a>
+        </div>
+
+        <div class="box">
+            <h3>Contactanos</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">twitter</a>
+        </div>
+
+    </div>
+
+    <div class="credit"><span> © 2022-2022, Esponjosos.com, SC</span></div>
+
+</section>
+
 
 
 </body>

@@ -13,6 +13,8 @@ from myapp.views import deno
 from myapp.views import pardo
 from myapp.views import carrito_compra
 from myapp.views import compraExito
+from myapp.views import form
+from myapp.views import bolsa
 
 
 urlpatterns = [
@@ -30,5 +32,7 @@ urlpatterns = [
     path("pardo",view=pardo,name="pardo"),
     path("cart_page",view=carrito_compra,name="cart_page"),
     path("compra",view=compraExito,name="compra"),
+    path("form",view=form,name="form"),
+    path("bolsa",view=bolsa,name="bolsa"),
 
 ]
