@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+  <link rel="stylesheet" href="{% static 'styles/navbar.css' %}">
+
+  <title>Bolsa</title>
+</head>
+<body>
+    <section>
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <a href="{% url 'index' %}" class="logo">Esponjosos<span>.</span></a>
+            <nav class="navbar">
+                <a href="{% url 'index' %}">Inicio</a>
+                <a href="{% url 'items' %}">Más productos</a>
+                <!-- <a href="#products">Tendencia</a> -->
+                <a href="{% url 'bolsa' %}">Bolsa de regalo</a>
+                <!-- <a href="#contact">Contacto</a> -->
+            </nav>
+            <div class="icons">
+                <a href="" class="fas fa-heart"></a>
+                <a href="" class="cart fas fa-shopping-cart"><span>0</span></a>
+                <a href="{% url 'form' %} " class="fas fa-user"></a>
+            </div>
+        </header>        
+    </section>
+    <section class="products" id="products">
+        <h1 class="heading"> Bolsas para  <span>aconpletar pedido</span> </h1>
+        <div class="container box-container" id="lista-productos">
+            <div class="box">
+                <span class="discount"></span>
+                <div class="image">
+                    <div>
+                        <img src="https://tonypapelerias.vtexassets.com/arquivos/ids/214624-300-300?v=637782345592670000&width=300&height=300&aspect=true" alt="My image">
+                    </div>
+                    <div class="icons">
+                        <a href="#"  class="cart-btn">Agregar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3></h3>
+                    <div class="price"> $25.00</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+                <div class="image">
+                    <div>
+                        <img src="https://i.pinimg.com/564x/c4/4f/cb/c44fcbb0e378250c5ed4f310560033d3.jpg" alt="My image">
+                    </div>
+                    <div class="icons">
+                        <a href="#"  class="cart-btn">Agregar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3></h3>
+                    <div class="price"> $25.00</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+                <div class="image">
+                    <div>
+                        <img src="https://cdn1.coppel.com/images/catalog/pr/7070802-1.jpg" alt="My image">
+                    </div>
+                    <div class="icons">
+                        <a href="#"  class="cart-btn">Agregar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3></h3>
+                    <div class="price"> $25.00</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+                <div class="image">
+                    <div>
+                        <img src="https://tonypapelerias.vtexassets.com/arquivos/ids/205103-300-300?v=637732914396730000&width=300&height=300&aspect=true" alt="My image">
+                    </div>
+                    <div class="icons">
+                        <a href="#"  class="cart-btn">Agregar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3></h3>
+                    <div class="price"> $25.00</div>
+                </div>
+            </div>
+
+            
+            <div class="box">
+                <span class="discount"></span>
+                <div class="image">
+                    <div>
+                        <img src="https://sc04.alicdn.com/kf/H139bb3c26cd34010a14650ca54f466ffE.jpg" alt="My image">
+                    </div>
+                    <div class="icons">
+                        <a href="#"  class="cart-btn">Agregar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3></h3>
+                    <div class="price"> $25.00</div>
+                </div>
+            </div>
+
+            
+            <div class="box">
+                <span class="discount"></span>
+                <div class="image">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHCkppPBljjk2PaMPKx1com92vUAG9vdWPg&usqp=CAU" alt="My image">
+                    </div>
+                    <div class="icons">
+                        <a href="#"  class="cart-btn">Agregar</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3></h3>
+                    <div class="price"> $25.00</div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Cliente</h3>
+                <a href=" {% static 'pdf/Aviso de privacidad.pdf' %}" target="_blank">Aviso de privacidad</a>
+                <a href="{% static 'pdf/Términos y condiciones.pdf' %}" target="_blank">Terminos y Condiciones</a>
+                <!-- <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a> -->
+            </div>
+
+            <div class="box">
+                <h3>Cuenta</h3>
+                <a href="#">Mi cuenta</a>
+                <a href="#">Mi orden</a>
+                <a href="#">Favoritos</a>
+            </div>
+
+            <div class="box">
+                <h3>Contactanos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">twitter</a>
+            </div>
+
+        </div>
+
+        <div class="credit"><span> © 2022-2022, Esponjosos.com, SC</span></div>
+
+    </section>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'javascript/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'javascript/bootstrap.min.js' %}"></script>
+    <script src="{% static 'javascript/sweetalert2.min.js' %}"></script>
+    <script src="{% static 'javascript/carrito.js' %}"></script>
+    <script src="{% static 'javascript/pedido.js' %}"></script>
+  
+
+</body>
+</html>

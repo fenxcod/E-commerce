@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'styles/form.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+  <link rel="stylesheet" href="{% static 'styles/navbar.css' %}">
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <section>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="{% url 'index' %}" class="logo">Esponjosos<span>.</span></a>
+        <nav class="navbar">
+            <a href="{% url 'index' %}">Inicio</a>
+            <a href="{% url 'items' %}">Más productos</a>
+            <!-- <a href="#products">Tendencia</a> -->
+            <a href="{% url 'bolsa' %}">Bolsa de regalo</a>
+            <!-- <a href="#contact">Contacto</a> -->
+        </nav>
+        <div class="icons">
+            <a href="" class="fas fa-heart"></a>
+            <a href="" class="cart fas fa-shopping-cart"><span>0</span></a>
+            <a href="{% url 'form' %} " class="fas fa-user"></a>
+        </div>
+    </header>        
+</section>
+  <section class="form-register">
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <p>Estoy de acuerdo con <a class="hover" href=" {% static 'pdf/Términos y condiciones.pdf' %} ">Terminos y Condiciones</a></p><br><br>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="#">¿Ya tengo Cuenta?</a></p>
+  </section>
+
+</body>
+</html>
