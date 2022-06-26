@@ -12,7 +12,7 @@
   <title>Más productos</title>
 </head>
 <body>
-    <section>
+    <section class="cart-box">
         <header>
             <input type="checkbox" name="" id="toggler">
             <label for="toggler" class="fas fa-bars"></label>
@@ -26,22 +26,23 @@
             </nav>
             <div class="icons">
                 <a href="" class="fas fa-heart"></a>
-                <a href="" class="cart fas fa-shopping-cart"><span>0</span></a>
+                <a href="" class="fas fa-shopping-cart"><span>0</span></a>
                 <a href="{% url 'form' %} " class="fas fa-user"></a>
             </div>
         </header>        
     </section>
 
-  <section class="products" id="products">
+  <section class="products shop-section" id="products">
     <h1 class="heading"> más <span>Productos</span> </h1>
-    <div class="container box-container" id="lista-productos">
-        <div class="box">
+    <div class="card-wrapper box-container" id="lista-productos">
+         
+        <div data-id="1" class="card-item box">
             <span class="discount">-10%</span>
             <div class="image">
                 <img src="{% static 'img/chiro1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" id="items" class="cart-btn">agregar</a>
+                    <a href="#" id="items" class="cart-btn add-to-cart-btn">agregar</a>
                     <a href="https://buy.stripe.com/test_bIY4i16jw6AngJqcMW" target="_blank">Comprar</a>
                 </div>
             </div>
@@ -50,13 +51,16 @@
                 <div class="price"> $90.00 <span>$100.00</span> </div>
             </div>
         </div>
-        <div class="box">
+
+
+
+        <div data-id="2" class="card-item box">
             <span class="discount">-15%</span>
             <div class="image">
                 <img src="{% static 'img/dinonaranja1.1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="#" class="cart-btn add-to-cart-btn">agregar</a>
                     <a href="https://buy.stripe.com/test_28o15PcHUbUHal214f" target="_blank">Comprar</a>
                 </div>
             </div>
@@ -65,13 +69,15 @@
                 <div class="price"> $127.00 <span>$150.00</span> </div>
             </div>
         </div>
-        <div class="box">
+
+
+       <div data-id="3" class="card-item box">
             <span class="discount">-15%</span>
             <div class="image">
                 <img src="{% static 'img/dinoniññoverde1.1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="#" class="cart-btn add-to-cart-btn">agregar</a>
                     <a href="https://buy.stripe.com/test_dR63dX23g5wj9gYcMY" target="_blank">Comprar</a>
                 </div>
             </div>
@@ -80,13 +86,15 @@
                 <div class="price"> $127.00 <span>$150.00</span> </div>
             </div>
         </div>
-        <div class="box">
+
+        
+        <div data-id="4" class="card-item box">
             <span class="discount">-20%</span>
             <div class="image">
                 <img src="{% static 'img/dinoverde1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="#" class="cart-btn add-to-cart-btn">agregar</a>
                     <a href="https://buy.stripe.com/test_14k01L37k6An64MdR3" target="_blank">Comprar</a>
                 </div>
             </div>
@@ -95,13 +103,15 @@
                 <div class="price"> $144.00 <span>$180.00</span> </div>
             </div>
         </div>
-        <div class="box">
+
+
+        <div data-id="5" class="card-item box">
             <span class="discount">-10%</span>
             <div class="image">
                 <img src="{% static 'img/gatogrande.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="#" class="cart-btn add-to-cart-btn">agregar</a>
                     <a href="https://buy.stripe.com/test_6oE8yh7nA3ob9gY28m" target="_blank" >Comprar</a>
                 </div>
             </div>
@@ -110,13 +120,15 @@
                 <div class="price"> $140.00 <span>$150.00</span> </div>
             </div>
         </div>
-        <div class="box">
+
+
+        <div data-id="6" class="card-item box">
             <span class="discount">-10%</span>
             <div class="image">
                 <img src="{% static 'img/kate1.1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Agregar</a>
+                    <a href="#" class="cart-btn add-to-cart-btn">Agregar</a>
                     <a href="https://buy.stripe.com/test_28o15PcHU5wj8cU5kz" target="_blank">Comprar</a>
                 </div>
             </div>
@@ -125,13 +137,15 @@
                 <div class="price"> $90.00 <span>$100.00</span> </div>
             </div>
         </div>
-        <div class="box">
+
+
+        <div data-id="7" class="card-item box">
             <span class="discount">-20%</span>
             <div class="image">
                 <img src="{% static 'img/dino2.1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="#" class="cart-btn add-to-cart-btn">agregar</a>
                     <a href="https://buy.stripe.com/test_9AQ8yhcHU6Anal2dR6" target="_blank">Comprar</a>
                 </div>
             </div>
@@ -140,13 +154,15 @@
                 <div class="price"> $160.00 <span>$180.00</span> </div>
             </div>
         </div>
-        <div class="box">
+
+
+        <div data-id="8" class="card-item box">
             <span class="discount">-20%</span>
             <div class="image">
                 <img src="{% static 'img/leon1.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="#" class="cart-btn add-to-cart-btn">agregar</a>
                     <a href="https://buy.stripe.com/test_bIY3dXazM3obbp66oF" target="_blank">Comprar</a>
                 </div>
             </div>
@@ -156,13 +172,13 @@
             </div>
         </div>
 
-        <div class="box">
+        <div data-id="9" class="card-item box">
             <span class="discount">-10%</span>
             <div class="image">
                 <img src="{% static 'img/sabino.png' %}" alt="My image">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">agregar</a>
+                    <a href="#" class="cart-btn add-to-cart-btn">agregar</a>
                     <a href="https://buy.stripe.com/test_5kAeWF4bo9Mz3WEdR8" target="_blank">Comprar</a>
                 </div>
             </div>
@@ -173,7 +189,7 @@
         </div>
 
     </div>
-
+<script src=" {% static 'js/main.js' %} "></script>
 </section>
 
 <section class="footer">
